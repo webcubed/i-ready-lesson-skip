@@ -1,6 +1,6 @@
 // utils
 function exposeObj(fun) {
-    debug(fun) // enter dun scope when fun called.
+    debug(fun) // enter fun scope when fun called.
     fun() //calls fun.
 }
 
