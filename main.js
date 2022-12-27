@@ -36,5 +36,5 @@ function wefwef() {
     }, 1000)
     setTimeout(() => {
         p1(100)
-    }, 10000)
+    }, 12000)
 }
