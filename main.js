@@ -20,4 +20,21 @@ function p1(score) {
         score: score
     }
     hook.completeLessonComponent(csid, objScore); // sends the request to complete the lesson
+    let csid2 = csid.replaceAll('_phx', '')
+    let csid3 = csid2.replaceAll('.phx', '')
+    if (csid3.includes('.20.v2_')) {
+        isQuiz= 'true';
+    } else if (csid3.includes('.10.v2_')) {
+        isQuiz= 'false';
+        wefwef()
+    }
+
+}
+function wefwef() {
+    setTimeout(() => {
+        document.getElementById('continue-button-button').click()
+    }, 1000)
+    setTimeout(() => {
+        p1(100)
+    }, 10000)
 }
