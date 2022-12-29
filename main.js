@@ -10,15 +10,16 @@ window.p1 = function(score) {
     mainHook.completeLessonComponent(csid, objScore); // sends the request to complete the lesson
     window.csid2 = csid.replaceAll('_phx', '')
     window.csid3 = csid2.replaceAll('.phx', '')
-    if (csid3.includes('.20.v2_')) {
+    window.csid5 = html5Iframe.src
+    if (csid5.includes('type=QUIZ#')) {
         isQuiz= 'true';
-    } else if (csid3.includes('.10.v2_')) {
+    } else if (csid5.includes('type=TUTORIAL#')) {
         isQuiz= 'false';
         wefwef()
     }
 
 }
-function wefwef() {
+window.wefwef = function() {
     setTimeout(() => {
         document.getElementById('continue-button-button').click()
     }, 1000)
